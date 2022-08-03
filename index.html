@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydraulic Horsepower Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="hydraulicHorsepowerRadio" name="variables" checked>
+  <label for="hydraulicHorsepowerRadio">Hydraulic Horsepower</label>
+
+  <input type="radio" id="headRadio" name="variables">
+  <label for="headRadio">Head</label>
+
+  <input type="radio" id="flowRateRadio" name="variables">
+  <label for="flowRateRadio">Flow Rate</label>
+
+  <input type="radio" id="specificGravityRadio" name="variables">
+  <label for="specificGravityRadio">Specific Gravity</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">Head (ft)</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">Flow Rate (gpm)</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">Specific Gravity</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
